@@ -28,7 +28,7 @@ test('ConvertRomanToInt render correctly', async () => {
   `)
 })
 
-test('Check functionality int to Roman - value : XC', async () => {
+test('Check functionality Roman to int - value : XC', async () => {
   const {getByTestId, getByText} = render(<ConvertRomanToInt />)
   const inputConvertToRoman = getByTestId('input-convert-to-int')
   const btnConvertToRoman = getByTestId('btn-convert-to-int')
@@ -39,7 +39,7 @@ test('Check functionality int to Roman - value : XC', async () => {
   expect(getByText('Amount: 90')).toBeInTheDocument()
 })
 
-test('Check functionality int to Roman - value : MCMXC', async () => {
+test('Check functionality Roman to int - value : MCMXC', async () => {
   const {getByTestId, getByText} = render(<ConvertRomanToInt />)
   const inputConvertToRoman = getByTestId('input-convert-to-int')
   const btnConvertToRoman = getByTestId('btn-convert-to-int')

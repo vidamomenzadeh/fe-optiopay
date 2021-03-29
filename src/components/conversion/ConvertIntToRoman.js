@@ -23,7 +23,6 @@ const ConvertIntToRoman = () => {
     }
 
     setHasError(false)
-    setConvertVal(null)
     setConvertVal(RomanNumerals.toRoman(inputEl.current.value))
   }
 

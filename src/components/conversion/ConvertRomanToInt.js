@@ -25,7 +25,6 @@ const ConvertRomanToInt = () => {
     }
 
     setHasError(false)
-    setConvertVal(null)
     setConvertVal(RomanNumerals.fromRoman(value))
   }
 

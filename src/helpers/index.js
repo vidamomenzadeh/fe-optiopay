@@ -22,10 +22,15 @@ const convertRomanSymbtoValue = (roman) => {
 }
 
 /**
- * intToRoman : Convert int to Roman,
- * romanToInt : Convert Roman to int
+ * toRoman : Convert int to Roman,
+ * fromRoman : Convert Roman to int
  * */
 export const RomanNumerals = {
+  /**
+   * Try to find the highest division based on RomanNumberRange (call it X).
+   * if X is greater than 0 then repeat that corresponding symbol,
+   * the new number is % from RomanNumberRange
+   */
   toRoman: (number) => {
     let index = RomanSymbol.length - 1
     let result = ''
@@ -40,6 +45,11 @@ export const RomanNumerals = {
 
     return result
   },
+  /**
+   * Loop through each character, Compare the value of the current roman symbol
+   * with the value of right charachter. If is less than that then add the
+   * value, if is greather than that then then add it else add subtract of them
+   */
   fromRoman: (str) => {
     let res = 0
 
